@@ -65,7 +65,11 @@ function Todo() {
         </button>
       </div>
 
-      <div className="w-1/2 mx-auto mt-16 p-3 shadow-2xl">
+      <div
+        className={`w-1/2 mx-auto mt-16 p-3 ${
+          tasks.length > 0 && "shadow-2xl"
+        }`}
+      >
         <ul className="mt-5">{renderList}</ul>
       </div>
     </div>
