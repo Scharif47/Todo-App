@@ -47,8 +47,15 @@ function Todo() {
   };
 
   const removeTask = (index) => {
-    setTasks(tasks.filter((task, i) => task[i] !== task[index]));
+    setTasks(tasks.filter((task, i) => i !== index));
   };
+
+  // const removeTask = (index) => {
+  //   const temp = [...tasks];
+  //   temp.splice(index, 1);
+  //   setTasks(temp);
+  //   setInput("");
+  // };
 
   const renderList = tasks.map((task, i) => (
     <li
