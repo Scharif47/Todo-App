@@ -81,7 +81,7 @@ function Todo() {
           tasks.length < 1
             ? "bg-white"
             : tasks.length < 4
-            ? "bg-gradient-to-r from-yellow-200 via-green-400 to-green-500"
+            ? "bg-gradient-to-r from-yellow-200 via-green-500 to-green-500"
             : tasks.length < 6
             ? "bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500"
             : "bg-gradient-to-r from-yellow-800 via-red-800 to-pink-900"
